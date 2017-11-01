@@ -1,4 +1,4 @@
-<Directory *>
+<VirtualHost *>
     Servername accrimemap.com
 
     WSGIScriptAlias / /var/www/crimemap/crimemap.wsgi
