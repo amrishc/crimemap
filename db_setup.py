@@ -16,7 +16,7 @@ try:
                     date DATETIME,
                     category VARCHAR (50),
                     description VARCHAR (1000),
-                    updated at TIMESTAMP ,
+                    updated_at TIMESTAMP,
                     PRIMARY KEY (id)
                     )"""
         cursor.execute(sql)
