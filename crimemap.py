@@ -1,14 +1,11 @@
 import dbconfig
 import json
+from flask import Flask, render_template, request
 
 if dbconfig.test:
     from mockdbhelper import MockDBHelper as DBHelper
 else:
     from dbhelper import DBHelper
-
-from dbhelper import DBHelper
-
-from flask import Flask, render_template, request
 
 app = Flask(__name__)
 DB = DBHelper()
